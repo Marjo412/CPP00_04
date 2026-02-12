@@ -37,5 +37,34 @@ objet.
 
 ---
 
+## 🧠 CPP01
+Le module **CPP01** introduit de nouveaux conpcepts du C++ tel que : l'allocation de mémoire, les pointeurs vers les membres, les références ou encore les instructions switch.
+
+### Exercice 00 : BraiiiiiiinnnzzzZ
+Cet exercice consiste à comnprendre la différence entre l'allocation sur la pile (stack) et sur le tas (heap), et quand utiliser l'un ou l'autre.
+Il faut créer plusieurs objets de classe `Zombie`, en utilisant les 2 différente fonctions : `newZombie` et `randomChump`, ce qui nous permet d'utiliser les 2 différentes
+méthodes d'allocation de mémoire. Ce qui nous permet également d'apprendre é utiliser `new`/`delete`, pour également comprendre la durée de vie des objets.
+
+### Exercice 01 : Moar brainz!
+Cet exercice approfondit la gestion de mémoire dynamique en C++ en introduisant l'allocation multiple avec `new[]` et la libération correspondante avec `delete[]`. Il met en évidence la différence entre une allocation unique et un tableau dynamique d'objets, ainsi que l'importance des contructeurs par défaut et de la durée de vie des objets sur la heap. 
+
+### Exercice 02 : HI THIS IS BRAIN
+Cet exercice a pour but de clarifier les références en C++ en le comparant directment aux pointeurs. Il montre que variables, pointeurs et références peuvent désigner la même adresse mémoire, tout en mettant en lumière les différences de syntaxe, de contraintes et d'utilisation entre pointeurs et références.
+
+### Exercice 03 : Unnecessary violence
+Cet exercice illustre la différence fondamentale entre l'utilisation d'une référence ou d'un pointeur en C++. La classe `HumanA` utilise une
+référence vers `Weapon`, garantissant qu'il est toujours armé. Tandis que `HumanB` utilise un pointeur, permettant l'absence d'arme et une affectation tardive. L'exercice met également en évidence le partage d'un même objet et l'impact des modfications sur les objets référencés.
+
+### Exercice 04 : Sed is for losers
+Cet exercice permet de se familiariser avec la manipulation de fichiers en C++ à l'aide des fuls `std::ifstream` et `std::ofstream`. Il met en pratique la gestion des arguments en ligne de commande ainsi que la manipulation avancée des chaines de caractères. L'exercice aborde également la gestion des erreurs et les cas limites, comme une chaîne de recherche vide ou un fichier inaccessible.
+
+### Exercice 05 : Harl 2.0
+Cet exercice permet de comprendre le fonctionnement des **fonctions membres** et des **pointeurs sur fonctions membres** en C++. Il met en pratique la sélection dynamique d'un comportement à partir d'une chaîne de caractères sans utiliser de chaînes de conditions, à l'aide de tableaux de pointeurs. L'exercice aborde également les notions d'encapsulation et de conception orientée objet.
+
+### Exercice 06 : Harl filter (bonus)
+Cet exercice est un exercice bonus et donc non obligatoire pour rendre le module CPP01. Il approfondit la mise en place d'un système de filtrage de messages basé sur des niveaux de gravité. Il met en pratique l'utilisation du `switch` statement et du mécanisme de **fall-through** afin d'exécuter plusieurs actions successivement à paritr d'un seul cas. L'exercice renforce également la compréhension des **fonctions membres** et de la structuration d'un comportement conditionnel propre et maintenable.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
