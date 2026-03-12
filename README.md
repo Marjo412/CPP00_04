@@ -66,5 +66,22 @@ Cet exercice est un exercice bonus et donc non obligatoire pour rendre le module
 
 ---
 
+## 🌈 CPP02
+Le module **CPP02** est conçu pour vous aider à comprendre le polymorphisme ad-hoc, les surcharges et les classes canoniques orthodoxes en C++. La forme canonique orthodoxe est une convention C++ qui consiste à définir le constructeur par défaut, le constructeur de copie, l’opérateur d’affectation et le destructeur afin de contrôler correctement le cycle de vie et la copie des objets.
+
+### Exercice 00 : My First Class in Orthodox Cannonical Form
+Cet exercice intriduit la `forme orthodoxe canonique` en C++ qui nous permet de l'utiliser selon les bonnes pratiques. Chaque classe doit implémenter : un `constructeur par défaut` qui permet sa création, un `constructeur de copie` pour garantir sa copie, un `opérateur d'afféctation` pour avoir son affectation et un `destrcuteur` qui permet sa destruction.
+
+### Exercice 01 : Towards a more useful fixed-point number class
+L'exercice introduit la représentation en virgule fixe. La classe devient un véritable type numérique capable de convertir des entiers et des flottants en une représentation interne basée sur un facteur fixe. On aborde les conversions de int <-> fixed et float <-> fixed ou encore la surcharge de l'opérateur `<<`.
+
+### Exercice 02 : Now we're talking
+Cet exercice transforme la classe en un type numérique complet grâce à la surcharge des opérateurs arithmétiques et de comparaison, ainsi que des opérateurs d'incrément et de décrément. Il introduit également les fonction statiques `min` et `max`, renforçant la compréhension des référence et du comportement des opérateurs en C++.
+
+### Exercice 03 : BSP (bonus)
+Cet exercice met en pratique tout ce qui a ete fait dans les exercices precedent en realisant un exercice de **Binary Space Partitioning**. 3 points dans les axes x et y sont donne ainsi qu'un 4eme point pour le quel on doit returner si il est a l'interieur ou non du triangle a l'aide d'une fonction en booleen.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
