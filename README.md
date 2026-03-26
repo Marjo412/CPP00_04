@@ -83,5 +83,22 @@ Cet exercice met en pratique tout ce qui a ete fait dans les exercices precedent
 
 ---
 
+## 🚀 CPP03
+Le module **CPP03** introduit les mécanismes fondamentaux de l'héritage en C++, à travers une hiérarchie de classe (`ClapTrap`, `ScavTrap`, `FragTrap`, `DiamondTrap`). Cela nous permet de comprendre comment structurer une architecture orientée objet robuste et cohérente. Il permet également de mettre en pratique la forme canonique orthodoxe.
+
+### Exercice 00 : Aaaaand... OPEN!
+Cet exercice introduit les bases de la programmation orientée objet en C++ à travers la création d’une classe `ClapTrap`. Il permet de comprendre l’encapsulation, la gestion de l’état interne d’un objet et le cycle de vie (constructeur, destructeur, copie). L'exercice 00 pose les fondations nécessaire à l'héritage.
+
+### Exercice 01 : Serena, my love!
+Dans cet exercice le concept d'hériatge simple est abordé en créant une nouvelle classe `ScavTrap`, qui est introduite en tant que classe dérivée de `ClapTrap`. Les attributs de classe deviennent accessible grâce au mot-clé `protected` et certaines méthodes sont redéfinies afin de modifier leur comportement. L'exercice met également en évidence le chaînage automatique des constructeurs et destructeurs dans une hiérachie d'héritage.
+
+### Exercice 02 : Repetitive work
+L'exercice 02 introduit une nouvelle classe dérivée `FragTrap`, qui enrichit la hiérarchie existante. Cette étape approfondit la notion de spécialisation d'une classe de base et introduit l'importancve du destructeur virtuel dans un contexte d'héritage. Le destructeur `ClapTrap` devient `virtuel` afin de garantir une destruction correcte lorsqu'un objet dérivé est manipulé via un pointeur vers la classe de base. Cette modification prépare progressivement au polymorphisme et assure une gestion sûre du cycle de vie des objets dans une hiérarchie plus complexe.
+
+### Exercice 03 : Now it’s weird! (bonus)
+Cet exercice intruduit l'héritage multiple avec la classe `DiamondTrap`, qui hérite à la fois de `ScavTrap` et `FragTrap`. Cette configuration crée le problème du diamant, où une même classe de base pourrait être héritée deux fois. Pour résoudre cette ambiguïté, l'héritage virtuel est utilisé, garantissant qu'une seule instance de `ClapTrap` existe dans `DiamondTrap`. Cet exercice intriduit également la notion de double identité, pusique de `DiamondTrap` possède son propre nom tout en concervant celui hérité de `ClapTrap`.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
