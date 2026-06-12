@@ -100,5 +100,55 @@ Cet exercice intruduit l'héritage multiple avec la classe `DiamondTrap`, qui h�
 
 ---
 
+## 🧭 CPP04
+Le module **CPP04** introduit les concepts avancés de la programmation orientée objet en C++, notamment le `polymorphisme`, les `fonctions virtuelles`, les `classes abstraites` et la gestion correcte de la mémoire. Il met l’accent sur la conception de classes robustes et extensibles.
+
+### Exercice 00 : Polymorphism
+Ce premier exercice du module **CPP04** introduit le concept de `polymorphisme` en C++. L'objectif est de créer une classe de bas `Aminal` est des classes dérivées `Cat` et `Dog`. Grâce au mot-clé `virtual`, le programme est capables d'appeler la bonne fonction selon le type réel de l'objet, même lorsqu'il est manipulé via un pointeur de la classe de base. L'exercice demande également d'implémenté une classe `WrongAnimal` afin d'illustrer le comportement incorrecte du polymorphisme lorsque les fonctions virtuelles ne sont pas utilisées.
+Il permet également de comprendre les notions fondamentales d`**héritage**, de **fonctions virtuelles** et de **polymorphisme** en C++.
+
+### Exercice 01 : I don't want to set the world on fire
+Cet exercice introduit la notion de copie profonde, `deep copy` en C++. il met en évidence les limites d'une copie superficielle qui consiste à copier uniquement les adresses mémoire pouvant provoquer des comportements indéfinis ou des erreurs comme les doubles suppressions. Au contraire la `deep copy` consiste à dupliquer entièrement les données pointées afin que chaque objet possède ses propres ressources indépendantes. L'exercice permet également de renforcer la compréhension du cycle de vie des  en C++.
+
+### Exercice 02 : Abstract class
+Cet exercice introduit la notien de `classe abstraite` en C++. La classe de base `Animal` est modifiée pour devenir abstraite, en déclarant la fonction makeSound() comme virtuelle pure. Cela empêche tout instanciation directe de la classe de base, qui représente désormais un concept général plutôt qu'un objet concret. Les classes dérivées doivent obligatoirement implémenter cette fonction, garantissant un comportement spécifique à chaque type. Le polymorphisme est conservé, permettant de manipuler des objets via des pointeurs vers la classe de base tout en appelant les bonnes implémentations
+
+### Exercice 03 : Interface & recap (bonus)
+Cet exercice introduit les interfaces en C++ à travers des classes abstraites pures, utilisées pour définir des comportements sans implémentation. Il met en avant la séparation entre interface et implémentation ainsi que l’utilisation du polymorphisme avancé.
+
+---
+
+## 🧠 CPP05
+Le module **CPP05** introduit la gestion des erreurs en C++ à travers les exceptions. Il pemet de comprendre comment sécuriser un programme en mettant des situations invalides en le straitant proprement grâce au mots-clés `throw`, `try` et `catch'`.
+
+### Exercice 00 : Mommy, when I grow up, I want to be a bureaucrat!
+Cet exercice introduit les bases des exceptions en C++ en les intégrant dans une classe. Il met en avant la notion d’invariants (ici, un grade valide) et oblige à sécuriser la création et la modification d’un objet. Il permet aussi de comprendre comment créer ses propres exceptions en héritant de `std::exception` et comment utiliser la forme canonique d’une classe.
+
+### Exercice 01 : Form up, maggots!
+Cet exercice approfondit la gestion des exceptions en introduisant l’interaction entre plusieurs classes. Il met en pratique la séparation des responsabilités : une classe définit les règles `Form` tandis qu’une autre les utilise `Bureaucrat`. Il introduit également la gestion des erreurs à travers plusieurs niveaux d’abstraction et renforce la compréhension du design orienté objet.
+
+### Exercice 02 : No, you need form 28B, not 28C...
+Cet exercice introduit les concepts avancés de la programmation orientée objet en C++, notamment les `classes abstraites`, la `fonction virtuelle`, l'`héritage` ou le `polymorphisme`. La classe de base `AForm` définit une interface commune et des règles générales, tandis que les classes dérivées implémentent des comportements spécifiques. Il met en pratique la séparation des responsabilités et permet de comprendre comment utiliser des fonctions virtuelles pour adapter dynamiquement le comportement d’un programme.
+
+### Exercice 03 : At least this beats coffee-making
+Cet exercice introduit la classe `Intern`, dont le rôle est de créer dynamiquement des formulaires dérivés de `AForm` en fonction d’un nom fourni sous forme de chaîne de caractères. L’objectif est de mettre en place un mécanisme de création flexible sans utiliser de longues chaînes de conditions `if/else`, en adoptant une approche plus modulaire et maintenable.
+
+---
+
+## 🚀 CPP06
+Le module **CPP06** introduit la conversion de types en C++ et la manipulation de représentations scalaires.  
+L’objectif est de comprendre comment une même valeur peut être interprétée et convertie entre différents types fondamentaux en utilisant les opérateurs de casts en C++.
+
+### Exercice 00 : Conversion of scalar types
+Cet exercice consiste à convertir une valeur donnée sous forme de chaîne de caractères vers les types scalaires fondamentaux: 'char', 'int', 'float', 'double'. Le programme doit d’abord identifier le type de la valeur, puis effectuer les conversions correspondantes à l’aide de 'static_cast'. Il doit également gérer les cas particuliers comme les pseudo-littéraux 'nan' et 'inf', ainsi que les conversions impossibles ou les caractères non affichables. Cet exercice met l’accent sur la compréhension des conversions de types et la validation des entrées en C++.
+
+### Exercice 01 : Serialization
+Cet exercice consiste à comprendre comment manipuler des pointeurs en C++ en les convertissant en un type entier, puis en les reconvertissant en pointeurs, sans perdre l’adresse mémoire avec `reinterpret_cast`.
+
+### Exercice 02 : Identify real type
+Cet exercice consiste à identifier le type réel d’un objet dérivé (A, B ou C) à partir d’un pointeur ou d’une référence de type `Base`. Il repose sur l’utilisation de `dynamic_cast`, qui permet de vérifier le type d’un objet à l’exécution. Avec un pointeur, un `cast` invalide retourne `NULL`, tandis qu’avec une référence, il lance une exception. L’objectif est de comprendre les casts en polymorphisme et la différence de comportement entre pointeurs et références en C++.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.

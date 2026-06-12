@@ -1,0 +1,31 @@
+NAME = Converter
+
+CC = c++
+CFLAGS = -Werror -Wextra -Wall -std=c++98
+INCLUDE = include
+
+SRC = ScalarConverter.cpp \
+		main.cpp
+
+OBJDIR = obj
+
+OBJ = $(SRC:%.cpp=$(OBJDIR)/%.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $@
+
+$(OBJDIR)/%.o: %.cpp | $(OBJDIR)
+	$(CC) $(CFLAGS) -I$(INCLUDE) -c $< -o $@
+
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
+
+clean:
+	rm -rf $(OBJDIR)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
