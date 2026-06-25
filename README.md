@@ -150,5 +150,19 @@ Cet exercice consiste à identifier le type réel d’un objet dérivé (A, B ou
 
 ---
 
+## 🧭 CPP07
+Le module **CPP07** introduit les templates en C++. Les templates permettent d’écrire du code générique capable de fonctionner avec plusieurs types sans devoir dupliquer les fonctions ou les classes. Au lieu de créer plusieurs versions d’une même fonction pour int, float, double ou std::string, on peut écrire une seule version générique que le compilateur adaptera automatiquement au type utilisé.
+
+### Exercice 00 : Start with a few functions
+Le but de cet exercice est d'implémenter trois fonctions templates pour avoir un première approche de ce concept. Les fonctions `swap`, `min` et `max doivent fonctionner avec plusieurs types différents.
+
+### Exercice 01 : Iter
+Le but de cet exercice est d’implémenter une fonction template iter capable de parcourir un tableau de n’importe quel type et d’appliquer une fonction sur chacun de ses éléments.
+
+### Exercice 02 : Array
+Cet exercice a pour but d'implémenter une classe template `Array capable de stocker des éléments de n'importe quel type. Cette classe reproduit le comportement d'un tableau dynamique tout en assurant une gestion sûre de la mémoire et des accès.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
