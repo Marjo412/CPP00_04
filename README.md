@@ -164,5 +164,19 @@ Cet exercice a pour but d'implémenter une classe template `Array capable de sto
 
 ---
 
+## 🧩 CPP08
+Le but du module **CPP08** est de découvrir les principaux composants de la `STL` en utilisant des conteneurs, des algorithmes et des itérateurs. Il permet de se familiariser avec les templates, les fonctions génériques et les adaptateurs de conteneurs à travers plusieurs exercices pratiques.
+
+### Exercice 00 : Easy find
+Cet exercice constitue un premier pas dans la découverte des templates appliqués aux conteneurs de la bibliothèque `STL`. L'objectif est d'écrire une fonction template générique capable de rechercher une valeur en int dans différents types de conteneurs séquentiels en s'appuyant sur l'algorithme `std::find`. Il permet ainsi de se familiariser avec les templates, les itérateurs et les algorithmes de la STL.
+
+### Exercice 01 : Span
+Le but de cet exercice est de manipuler les conteneurs STL tout en concevant une classe complète. Il faut créer une classe `Span` (écart ou distance) capable de stocker un nombre limité d'entiers et de calculer le plus petit ainsi que le plus grand écart entre les valeurs qu'elle contient. Cet exercice permet également de se familiariser avec les algorithmes de la STL, les itérateurs, les templates et la gestion des exceptions.
+
+### Exercice 02 : Mutated abomination
+Le but de cet exercice est de comprendre le fonctionnement des adaptateurs de conteneurs de la STL. Il faut créer une classe `MutantStack` héritant de `std::stack` tout en lui ajoutant la possibilité de parcourir ses éléments grâce à des itérateurs. Cet exercice permet de se familiariser avec l'héritage, les templates, les itérateurs ainsi que le fonctionnement interne des conteneurs adaptateurs de la bibliothèque STL.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
