@@ -178,5 +178,26 @@ Le but de cet exercice est de comprendre le fonctionnement des adaptateurs de co
 
 ---
 
+## 🌈 CPP09
+Le but du module **CPP09** est d'apprendre à utiliser les conteneurs de la STL pour résoudre des problèmes concrets. Chaque exercice impose un ou plusieurs conteneurs spécifiques afin de comprendre leurs caractéristiques, leurs avantages et de choisir la structure de données la plus adaptée au problème à résoudre. Ce module permet également d'aborder différents concepts tels que la validation de données, la lecture et le traitement de fichiers, l'utilisation d'une pile (stack), d'un tableau associatif (map) ainsi que l'implémentation d'un algorithme de tri performant.
+
+### Exercice 00 : Bitcoin Exchange
+Cet exercice consiste à créer un programme capable de calculer la valeur d'une quantité de bitcoins à une date donnée. Le programme charge les taux de change depuis un fichier `CSV`, puis analyse un fichier fourni en argument contenant des dates et des quantités de bitcoins. Il doit également vérifier la validité des données et gérer les différentes erreurs possibles.
+
+J'ai choisi d'utiliser le conteneur `std::map` pour stocker la base de données sous la forme **date → taux de change**. Ce conteneur est particulièrement adapté car il associe une clé unique à une valeur et conserve automatiquement les clés triées. Cela permet également d'utiliser `lower_bound()` pour retrouver facilement la date inférieure la plus proche lorsqu'une date exacte n'existe pas dans la base de données.
+### Exercice 01 : Reverse Polish Notation
+L'objectif de cet exercice est de créer un programme capable de calculer une expression mathématique écrite en notation polonaise inversée (RPN). Dans cette notation, les opérateurs sont placés après les nombres, par exemple 8 2 + correspond à 8 + 2. Le programme doit gérer les opérateurs +, -, * et /, tout en détectant les expressions incorrectes.
+
+J'ai choisi le conteneur `std::stack` car son fonctionnement en LIFO (Last In, First Out) est particulièrement adapté à la RPN. Les nombres sont ajoutés dans la pile avec `push()`. Lorsqu'un opérateur est rencontré, les deux dernières valeurs sont récupérées avec `top()` puis retirées avec `pop()`. L'opération est effectuée et son résultat est ensuite replacé dans la pile.
+
+J'avais également déjà utilisé `std::stack` dans le module **CPP08**, ce qui m'a permis de réutiliser et d'approfondir les bases vues précédemment.
+
+### Exercice 02 : PmergeMe
+Le but de cet exercice est de comparer les performances du même algorithme de tri sur deux conteneurs de la  STL. Pour cela j'aimplémenté l'algorithme de tri *Ford-Johnson (Merge-Insertion Sort)*, afin de trier une séquence de nombres entiers et de mesurer le temps d'exécution obtenu avec chacun des deux conteneurs. J'ai utilisé les conteurs `std::vector` et `std::deque`.
+
+J'ai choisi `std::vector` car il offre un accès direct aux éléments grâce à un stockage contigu en mémoire, ce qui est particulièrement adapté aux nombreuses comparaisons et recherches effectuées par l'algorithme. J'ai également utilisé `std::deque, qui propose lui aussi un accès aléatoire tout en ayant une organisation mémoire différente. L'objectif est de comparer leurs performances lors de l'exécution du même algorithme de tri.
+
+---
+
 ## ✨ Pour conclure
 Ce projet à été réalisé dans le cadre du cursus 42 par mrosset.
